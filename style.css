@@ -1,0 +1,275 @@
+*{
+    margin: 0px;
+}
+.seccion-1{
+    display: flex;
+}
+.titulo-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+    color: #232851;
+}
+
+.nav-superior{
+    width: 600px;
+}
+.contact-menu{
+    width: 100px;
+    height: 30px;
+}
+
+.menu-desktop ul{
+    width: 600px;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+.menu-desktop ul li:hover{
+    color: #b6b6bf;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Be Vietnam Pro';
+    font-size: 16px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-text{
+    margin-top: 30px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 30px;
+}
+.main-text h1{
+    font-weight: 700;
+    color: #232851;
+    font-size: 34px;
+    width: 80%;
+}
+.main-text :nth-child(2){
+    font-size: 12px;
+    padding-block: 20px;
+}
+
+.redondeado{
+    border-radius: 30px;
+    padding-inline: 25px;
+    padding-block: 8px;
+}
+.morado{
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+.boton{
+    border: none;
+}
+.texto-secundario{
+    color: #FFFFFF;
+}
+.cabecera-articulo{
+    display: flex;
+    align-items: center;
+}
+.contenedor-articulos{
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.articulo{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-items: end;
+}
+
+.contenido-articulo{
+    width: 95%;
+    font-size: 12px;
+    color:#9e9b9b;
+    padding-block: 15px;
+}
+.cabecera-articulo {
+    background-color: #8b48bf6f;
+    border-radius: 30px 0px 0px 30px;
+    display: flex;
+    justify-content: start;
+}
+.cabecera-articulo .cabecera-texto{
+    padding-left: 15px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.titulo-intermedio{
+    padding-block: 40px;
+    color: #232851; 
+}
+.contenedor-art-con-imagenes{
+    display: flex;
+    margin-block: 20px;
+    width: 100%;
+    justify-content: center;
+}
+.artic-imagen{
+    background-color: #f2f2f2;
+    width: 95%;
+}
+.cabecera-artic-imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.artic-imagen img{
+    width: 50px;
+    margin-top: -25px;
+}
+.artic-imagen header b{
+    padding-block: 20px;
+    color: #232851;
+}
+.artic-imagen  p{
+    color:#9e9b9b;
+    width: 90%;
+    text-align: center;
+    padding-inline: 20px;
+    padding-bottom: 10px;
+}
+.mejor-del-anio{
+    padding-block: 40px;
+    padding-inline: 70px;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mejor-del-anio h2{
+    width: 80%;
+    text-align: center;
+}
+.mejor-del-anio button{
+    background-color: #232851;
+    color: white;
+    margin-top: 20px;
+}
+
+footer{
+    background-color: #1E1E26;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+}
+footer form input{
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    width: 75%;
+}
+.menus{
+    display: flex;
+    color: white;
+    padding-block: 30px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 30px;
+    font-size: 14px;
+}
+.menus ul{
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+.imagenes-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fila-iconos-peq{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.logo-footer{
+    margin-block: 20px;
+}
+.copy{
+    display: flex;
+    justify-content: center;
+    color:#9e9b9b;
+    font-size: 10px;
+}
+@media (max-width: 480px) {
+    
+    .menu-desktop{
+        display: none;
+    }
+    .seccion-1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagen-principal{
+        width: 400px;
+    }
+    .celeste-morado{
+        background-color: #3CDDF3;
+        color: #FFFFFF;
+    }
+    .texto-secundario{
+        padding-block: 20px;
+        padding-inline: 15px;
+        text-align: left;
+    }
+    .texto-secundario h2{
+        width: 60%;
+        padding-bottom: 40px;
+    }
+    .texto-secundario div::after{
+        content: "Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams";
+    }
+    .contenedor-art-con-imagenes article:nth-child(odd){
+        display: none;
+    }
+}  
+@media (min-width: 481px) {
+    .seccion-1{
+        width: 85%;
+        padding-block: 30px;
+    }
+    .main-text{
+        width: 40%;
+    }
+    
+    .menu-mobile{
+        display: none;
+    }
+    .imagen-principal{
+        width: 400px;
+        margin-inline: 70px;
+    }
+    .celeste-morado{
+        background-color: #8B48BF;
+    }
+    .texto-secundario div::after{
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet consequat purus sit amet sodales. In faucibus ut nisi eu dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.";
+    }
+    .salto-movil{
+        display: none;
+    }
+}  
+
