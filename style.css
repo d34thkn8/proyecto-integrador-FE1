@@ -239,34 +239,94 @@ footer form input{
         width: 60%;
         padding-bottom: 40px;
     }
-    .texto-secundario div::after{
-        content: "Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams";
-    }
     .contenedor-art-con-imagenes article:nth-child(odd){
+        display: none;
+    }
+    .solo-escritorio{
         display: none;
     }
 }  
 @media (min-width: 481px) {
-    .seccion-1{
-        width: 85%;
-        padding-block: 30px;
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .main-text{
-        width: 40%;
+    .titulo-principal{
+        width: 80%;
     }
-    
     .menu-mobile{
         display: none;
     }
-    .imagen-principal{
-        width: 400px;
-        margin-inline: 70px;
+    .seccion-1{
+        width: 80%;
+        padding: 0px;
+        padding-block: 80px;
+        justify-content: space-between;
     }
+    .imagen-principal{
+        width: 50%;
+        margin: 0px;
+    }
+    .solo-movil{
+        display: none;
+    }
+    .main-text{
+        width: 50%;
+        display: flex;
+        padding: 0px;
+        flex-direction: column;
+        align-items: end;
+    }
+    .main-text h1{
+        padding-right: 0px;
+        width: 80%;
+    }
+    
+    .texto-secundario{
+        display: flex;
+        justify-content: space-between;
+        padding-block: 20px;
+        padding-inline: 70px;
+    }
+    .texto-secundario h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .texto-secundario p{
+        width: 50%;
+    }
+    
+    .contenedor-articulos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: #f2f2f2;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 40px;
+    }
+    .articulo{
+        width: 35%;
+        display: flex;
+        align-items: end;
+        padding: 10px;
+    }
+    .articulo .cabecera-articulo{
+        width: 100%;
+        background-color: #f2f2f2;
+    }
+    .contenido-articulo{
+        width: 83%;
+    }
+
+    .contenedor-art-con-imagenes{
+        width: 80%;
+    }
+
     .celeste-morado{
         background-color: #8B48BF;
-    }
-    .texto-secundario div::after{
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet consequat purus sit amet sodales. In faucibus ut nisi eu dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.";
     }
     .salto-movil{
         display: none;
